@@ -23,22 +23,25 @@ class AppClass extends React.Component {
       name: "Warren"
     };
   }
-//now we just use
+//Constructors are not used as much anymore for setting up state...now we just use
 //state = {name: "Warren"}
 //to accomplish the same thing. 
 
-//this block of code is the equivalent of useEffect() in a Functional Component.
+//MOUNT - this block of code is the equivalent of useEffect(()=>{},[]) in a Functional Component. Note carefully the empty dependency array. 
 //this is the code that runs AFTER the initial render. 
   componentDidMount() {
     console.log('AppClass: Component Mounted');
   }
 
+
+//UPDATE - this block of code is the same as useEffect(()=>{}) in a Functional Component. Note there is NO empty array at the end. 
   componentDidUpdate() {
     //could be written componentDidUpdate (prevProps, prevState)
       //console.log('old props: ', prevProps);
       //console.log('new props: ', this.props);
       //console.log('old state: ', prevState);
       //console.log('new state: ', this.state);
+      //if (this.props !== prevProps) {console.log('Was a props change')}
     console.log('AppClass: Component Updated');
   }
 
