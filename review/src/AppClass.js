@@ -27,7 +27,8 @@ class AppClass extends React.Component {
 //state = {name: "Warren"}
 //to accomplish the same thing. 
 
-//this block of code is the equivalent of useEffect() in a Functional Component. 
+//this block of code is the equivalent of useEffect() in a Functional Component.
+//this is the code that runs AFTER the initial render. 
   componentDidMount() {
     console.log('AppClass: Component Mounted');
   }

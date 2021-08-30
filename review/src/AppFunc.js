@@ -9,7 +9,8 @@ const AppFunc = () => {
     setName("Allison");
   };
 
-  //this block of code is the equivalent of componentDidMount in a Class Component. 
+  //this block of code is the equivalent of componentDidMount in a Class Component.
+  //this is the code that runs AFTER the initial render. 
   useEffect(() => {
     console.log('AppFunc: Component has Mounted Just this ONCE');
     //most likely you will want to set new state here
