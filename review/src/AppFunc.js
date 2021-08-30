@@ -9,10 +9,12 @@ const AppFunc = () => {
     setName("Allison");
   };
 
+  //this block of code is the equivalent of componentDidMount in a Class Component. 
   useEffect(() => {
     console.log('AppFunc: Component has Mounted Just this ONCE');
     //most likely you will want to set new state here
   }, [])
+
 
   useEffect(() => {
     console.log('AppFunc: Component had Updated');
